@@ -193,6 +193,30 @@ h2 {
 .section-refills h2 {
   color: #a1a5af; }
 
+.section-pricing-plans .card__heading {
+  font-family: 'gilroy-extrabold';
+  font-size: 2.8rem;
+  text-transform: uppercase; }
+
+.section-pricing-plans .card__details {
+  font-size: 1.6rem; }
+
+.section-pricing-plans .card__price-box {
+  letter-spacing: .3rem; }
+
+.section-pricing-plans .card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+
+.section-pricing-plans .card__price-value {
+  font-family: 'gilroy-light';
+  font-size: 3.5rem; }
+  .section-pricing-plans .card__price-value span {
+    font-size: 10rem; }
+
+.section-pricing-plans .card a {
+  font-size: 1.3rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -323,7 +347,6 @@ h2 {
   .card__side {
     height: 51rem;
     width: 100%;
-    color: #fff;
     font-size: 2rem;
     transition: all 1.2s ease;
     position: absolute;
@@ -359,28 +382,24 @@ h2 {
       background-image: linear-gradient(to right bottom, #11205f, #2D55F7), url(../../img/card__picture--h2.jpg); }
   .card__heading {
     color: #fff;
-    font-family: 'gilroy-extrabold';
-    font-size: 2.8rem;
-    text-transform: uppercase;
     position: absolute;
     top: 12rem;
     left: 50%;
     transform: translateX(-50%);
-    text-shadow: 2px 2px 5px #535353; }
+    text-shadow: 2px 2px 5px rgba(56, 56, 56, 0.8); }
   .card__details {
-    font-size: 1.6rem;
     color: #6b717f; }
     .card__details table {
-      text-align: right;
       border-collapse: collapse;
       width: 100%; }
-      .card__details table td {
-        padding: 1rem;
-        text-align: left !important; }
       .card__details table th, .card__details table td {
-        padding: 8px; }
+        padding: .8rem;
+        text-align: center !important; }
       .card__details table tr:nth-of-type(even) {
         background: #efefef; }
+    .card__details span {
+      color: #9b9c9f;
+      text-decoration: line-through; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -389,19 +408,9 @@ h2 {
     text-align: center;
     width: 90%; }
   .card__price-box {
-    letter-spacing: .3rem;
     color: #fff;
     margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-family: 'gilroy-light';
-    font-size: 3.5rem; }
-    .card__price-value span {
-      font-size: 10rem; }
   .card a {
-    font-size: 1.3rem;
     margin: 0 auto; }
 
 .composition {

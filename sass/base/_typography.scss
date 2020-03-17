@@ -81,12 +81,46 @@ h2 {
     }
 }
 
-// section-refills
-.section-refills {
-    & h1, p {
-        color: $cor-branco;
-    }
-    & h2 {
-        color: lighten($sub-titulo, 20%);
-    }
+// SECTIONS
+.section{
+	// REFILLS
+	&-refills {
+    	& h1, p {
+        	color: $cor-branco;
+    	}
+    	& h2 {
+        	color: lighten($sub-titulo, 20%);
+    	}
+			
+		}
+		// PRICING-PLANS
+		&-pricing-plans {
+			& .card {
+				&__heading {
+					font-family: 'gilroy-extrabold';
+    			font-size: 2.8rem;
+    			text-transform: uppercase;
+				}
+				&__details {
+					font-size: 1.6rem;
+				}
+				&__price-box {
+					letter-spacing: .3rem;
+				}
+				&__price-only {
+					font-size: 1.4rem;
+     			text-transform: uppercase;
+				}
+				&__price-value {
+					font-family: 'gilroy-light';
+					font-size: 3.5rem;
+						& span {
+							font-size: 10rem;
+					 	}
+				}
+				& a {
+					font-size: 1.3rem;
+				}
+			}
+		}
 }

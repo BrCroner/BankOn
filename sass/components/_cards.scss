@@ -8,7 +8,6 @@
   &__side {
     height: 51rem;
     width: 100%;
-    color: #fff;
     font-size: 2rem;
     transition: all 1.2s ease;
 
@@ -60,9 +59,6 @@
   }
   &__heading {
     color: $cor-branco;
-    font-family: 'gilroy-extrabold';
-    font-size: 2.8rem;
-    text-transform: uppercase;
     position: absolute;
     top: 12rem;
     left: 50%;
@@ -70,24 +66,21 @@
     text-shadow: 2px 2px 5px rgba(56, 56, 56, 0.8);
   }
   &__details {
-    font-size: 1.6rem;
     color: $sub-titulo;
-    & table{
-      text-align: right;
+    & table {
       border-collapse: collapse;
       width: 100%;
-      & td {
-        padding: 1rem;
-        text-align: left !important;
-      }
-      & {
-        th, td {
-          padding: 8px;
-        }
+      & th, td {
+          padding: .8rem;
+          text-align: center !important;
       }
       & tr:nth-of-type(even) { 
         background: darken($cor-branco, 6.3%); 
-        }
+      }
+    }
+    & span {
+      color: lighten($texto, 30%);
+      text-decoration:line-through;
     }
   }
    // Card parte de trás estilo
@@ -100,23 +93,10 @@
      width: 90%;
    }
    &__price-box {
-     letter-spacing: .3rem;
      color: $cor-branco; 
      margin-bottom: 8rem;
    }
-   &__price-only  {
-     font-size: 1.4rem;
-     text-transform: uppercase;
-   }
-   &__price-value {
-     font-family: 'gilroy-light';
-     font-size: 3.5rem;
-     & span {
-      font-size: 10rem;
-     }
-   }
    & a {
-     font-size: 1.3rem;
      margin: 0 auto;
    }
 }
