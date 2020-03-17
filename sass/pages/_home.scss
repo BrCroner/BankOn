@@ -1,0 +1,45 @@
+[class^="section"] {
+    background-image: linear-gradient($cor-branco, $cor-cinza);
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+}
+.section {
+   
+    &-card {
+        
+        &--wrapper {
+            & li {
+                cursor: default;
+                list-style-type: none;
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+            & span {
+                color: $cor-primaria;
+            }
+        }
+    }
+    &-refills {
+        height: 72vh;
+        margin-top: 2rem;
+        padding-top: 15rem;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($cor-secundaria, 0.9),
+            rgba($cor-secundaria-hue, 0.9)),
+            url(../../img/background-refills.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+        -moz-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+        -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    }
+    &-pricing-plans {
+        margin-top: -20rem;
+        padding-top: 20rem;
+        background-color: rgba($cor-secundaria, 0.9);
+    }
+}
+

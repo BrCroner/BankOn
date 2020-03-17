@@ -1,0 +1,20 @@
+.prepaid-card {
+  list-style: none;
+  display: inline-block;
+  & li {
+    height: 11rem;
+    width: 11rem;
+    display: block;
+    float: left;
+    transition: transform ease-in .25s;
+    &:hover{
+      transform: scale(1.1) translateY(-.5rem);
+    }
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+    & img {
+      width: 10rem;
+    }
+}

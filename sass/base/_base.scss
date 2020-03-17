@@ -1,0 +1,30 @@
+//RESETS
+*, 
+*::after, 
+*::before,
+ul  {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+//DEFAULT
+html {
+    //Esse valor define o que 1rem é!
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+}
+::selection {
+    background: $cor-primaria-opacity;
+}
+
+//BODY
+.site-wrap {
+    transform: scale(.98);
+    transition: transform .5s;
+}
+.fixed-nav .site-wrap {
+    transform: scale(1);
+}

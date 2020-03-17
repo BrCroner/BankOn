@@ -1,0 +1,13 @@
+.composition {
+  position: relative;
+  &__modelo-feminina {
+    width: 100%;
+    margin-top: -10%;
+  }
+  &__card {
+    width: 100%;
+    margin-top: -10%;
+    transform: rotate(18deg);
+    transition: all 200ms ease-in;
+  }
+}

@@ -1,0 +1,122 @@
+.card {
+  // Funcionalidade
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 51rem;
+
+  &__side {
+    height: 51rem;
+    width: 100%;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 1.2s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    &--font {
+      background-color: $cor-branco;
+
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      &-h1 {
+        background: linear-gradient(to right bottom, $cor-primaria-hue, $cor-primaria);
+      }
+      &-h2 {
+        background: linear-gradient(to right bottom, $cor-secundaria-hue, $cor-secundaria);
+      }
+    }
+  }
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  // Card frontal estilo
+  &__picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: color;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    &--h1 {
+      background-image: linear-gradient(to right bottom, $cor-primaria, $cor-primaria-hue), url(../../img/card__picture--h1.jpg);
+    }
+    &--h2 {
+      background-image: linear-gradient(to right bottom, $cor-secundaria, $cor-secundaria-hue), url(../../img/card__picture--h2.jpg);
+    }
+
+  }
+  &__heading {
+    color: $cor-branco;
+    font-family: 'gilroy-extrabold';
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 5px rgba(56, 56, 56, 0.8);
+  }
+  &__details {
+    font-size: 1.6rem;
+    color: $sub-titulo;
+    & table{
+      text-align: right;
+      border-collapse: collapse;
+      width: 100%;
+      & td {
+        padding: 1rem;
+        text-align: left !important;
+      }
+      & {
+        th, td {
+          padding: 8px;
+        }
+      }
+      & tr:nth-of-type(even) { 
+        background: darken($cor-branco, 6.3%); 
+        }
+    }
+  }
+   // Card parte de trás estilo
+   &__cta {
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     width: 90%;
+   }
+   &__price-box {
+     letter-spacing: .3rem;
+     color: $cor-branco; 
+     margin-bottom: 8rem;
+   }
+   &__price-only  {
+     font-size: 1.4rem;
+     text-transform: uppercase;
+   }
+   &__price-value {
+     font-family: 'gilroy-light';
+     font-size: 3.5rem;
+     & span {
+      font-size: 10rem;
+     }
+   }
+   & a {
+     font-size: 1.3rem;
+     margin: 0 auto;
+   }
+}
