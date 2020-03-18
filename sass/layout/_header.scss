@@ -1,20 +1,20 @@
 .header {
-    height: 90vh;
-    background-image: url(../img/banner-01.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 90vh;
+  background-image: url(../img/banner-01.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    /*clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);*/
+  /*clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);*/
 
-    &__text-box {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+  &__text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
