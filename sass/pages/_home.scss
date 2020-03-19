@@ -40,6 +40,25 @@
         margin-top: -20rem;
         padding-top: 20rem;
         background-color: rgba($cor-secundaria, 0.9);
-    }
+        & .footnotes {
+            border-bottom: none;
+        }
+        & .pricing-text {
+					// margin-top: 10rem;
+        }
+		}
+		&-app {
+			& img {
+				width: 100%;
+			}
+			& .badges {
+				margin-top: 8rem;
+
+				&--ios, &--google-play {
+					width:auto;
+					height:9rem;
+				}
+			}
+		}
 }
 

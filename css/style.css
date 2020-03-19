@@ -217,6 +217,9 @@ h2 {
 .section-pricing-plans .card a {
   font-size: 1.3rem; }
 
+.footnotes {
+  font-size: 1.2rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -424,6 +427,25 @@ h2 {
     transform: rotate(18deg);
     transition: all 200ms ease-in; }
 
+.footnotes {
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b;
+  padding: .17rem 0 .10rem; }
+  .footnotes a {
+    color: #515154;
+    text-decoration: none; }
+    .footnotes a:hover {
+      color: #00bfb2;
+      text-decoration: underline; }
+  .footnotes ol {
+    list-style-position: outside; }
+    .footnotes ol li {
+      list-style-type: decimal; }
+  .footnotes ul {
+    list-style: none; }
+  .footnotes ol li:not(:last-child), .footnotes ul li:not(:last-child) {
+    margin-bottom: .8rem; }
+
 nav {
   background: linear-gradient(to right, #00b5a8, #00d9ca);
   top: 0;
@@ -619,3 +641,14 @@ li.menu__logo {
   margin-top: -20rem;
   padding-top: 20rem;
   background-color: rgba(17, 32, 95, 0.9); }
+  .section-pricing-plans .footnotes {
+    border-bottom: none; }
+
+.section-app img {
+  width: 100%; }
+
+.section-app .badges {
+  margin-top: 8rem; }
+  .section-app .badges--ios, .section-app .badges--google-play {
+    width: auto;
+    height: 9rem; }

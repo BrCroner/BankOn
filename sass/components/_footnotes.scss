@@ -1,0 +1,30 @@
+.footnotes {
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b;
+  padding: .17rem 0 .10rem;
+  & a {
+    color: #515154;
+    text-decoration: none;
+    &:hover {
+      color: $cor-primaria;
+      text-decoration: underline;
+    }
+  }
+  & ol {
+    list-style-position: outside;
+    & li {
+      list-style-type: decimal;
+    }
+  }
+  ul {
+    list-style: none;
+    & li {
+
+    }
+  }
+  & ol li, ul li {
+    &:not(:last-child) {
+      margin-bottom: .8rem;
+  }
+  }
+}
