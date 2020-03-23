@@ -170,7 +170,7 @@ h2 {
 .heading {
   letter-spacing: .10rem; }
   .heading-primary {
-    color: #0d1321;
+    color: #2b303a;
     text-transform: uppercase;
     font-size: 4rem; }
   .heading-secondary {
@@ -178,7 +178,7 @@ h2 {
     display: inline-block;
     font-size: 2.5rem; }
   .heading-tertiary {
-    color: #0d1321;
+    color: #2b303a;
     font-size: 1.8rem;
     text-transform: uppercase; }
 
@@ -219,6 +219,9 @@ h2 {
 
 .footnotes {
   font-size: 1.2rem; }
+
+footer, footer .paragraph {
+  font-size: 1.3rem; }
 
 .u-center-text {
   text-align: center; }
@@ -288,8 +291,9 @@ h2 {
   opacity: 0; }
 
 .btn-slide {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
   position: absolute;
   top: 60%;
   background-color: transparent;
@@ -300,19 +304,20 @@ h2 {
   transition: all ease-in .2s;
   cursor: pointer; }
   .btn-slide__prev {
-    border-bottom: 6px solid #fff;
     border-left: 6px solid #fff;
     transform: rotate(45deg);
     left: 20%; }
     .btn-slide__prev:hover {
       transform: rotate(45deg) scale(1.1); }
   .btn-slide__next {
-    border-bottom: 6px solid #fff;
     border-left: 6px solid #fff;
     transform: rotate(-135deg);
     right: 20%; }
     .btn-slide__next:hover {
       transform: rotate(-135deg) scale(1.1); }
+  .btn-slide__prev, .btn-slide__next {
+    border-bottom: 6px solid #fff;
+    padding: 2rem; }
 
 .btn--animated {
   animation: moveInBottom 0.75s ease-in-out .75s;
@@ -426,6 +431,35 @@ h2 {
     margin-top: -10%;
     transform: rotate(18deg);
     transition: all 200ms ease-in; }
+
+footer {
+  color: #6b717f;
+  margin-bottom: 0;
+  padding: 4rem 0; }
+  footer .heading-tertiary {
+    color: #2b303a; }
+  footer ul {
+    list-style-type: none; }
+  footer .footer {
+    border-top: 1px solid #d2d2d7; }
+    footer .footer [class^="col-"] {
+      margin-top: 2.5rem; }
+    footer .footer--social-media {
+      list-style-type: none;
+      margin-bottom: .6rem; }
+      footer .footer--social-media::after {
+        content: "";
+        display: table;
+        clear: both; }
+      footer .footer--social-media li {
+        float: left; }
+        footer .footer--social-media li:not(:last-child) {
+          margin-right: 2rem; }
+      footer .footer--social-media--icon {
+        height: 3rem;
+        width: 3rem; }
+  footer span {
+    color: #e84855; }
 
 .footnotes {
   border-bottom: 1px solid #d2d2d7;
@@ -651,4 +685,4 @@ li.menu__logo {
   margin-top: 8rem; }
   .section-app .badges--ios, .section-app .badges--google-play {
     width: auto;
-    height: 9rem; }
+    height: 5rem; }

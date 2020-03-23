@@ -46,8 +46,9 @@
         opacity: 0;
     }
     &-slide {
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
         position: absolute;
         top: 60%;
         background-color: transparent;
@@ -56,9 +57,9 @@
         border-top: 0;
         outline: none;
         transition: all ease-in .2s;
+        
         cursor: pointer;
         &__prev {
-            border-bottom: 6px solid $cor-branco;
             border-left: 6px solid $cor-branco;
             transform: rotate(45deg);
             left: 20%;
@@ -68,7 +69,6 @@
             }
         }
         &__next {
-            border-bottom: 6px solid $cor-branco;
             border-left: 6px solid $cor-branco;
             transform: rotate(-135deg);
             right: 20%;
@@ -76,6 +76,10 @@
             &:hover {
                 transform: rotate(-135deg) scale(1.1);
             }
+        }
+        &__prev, &__next {
+            border-bottom: 6px solid $cor-branco;
+            padding: 2rem;
         }
     }
     &--animated {
