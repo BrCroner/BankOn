@@ -46,9 +46,21 @@
       }
 	}
 	&-app {
-		& img {
+    margin-bottom: 12rem;
+    & img {
 			width: 100%;
 		}
+    & .smartphone {
+      position: relative;
+      &--img {
+        width: 200% !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-28%) translateX(-60%);
+        -webkit-transform: translateY(-28%) translateX(-60%);
+      }
+    }
 		& .badges {
 			margin-top: 8rem;
 			&--ios, &--google-play {

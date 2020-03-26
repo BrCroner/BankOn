@@ -21,7 +21,6 @@
 
     &--font {
       background-color: $cor-branco;
-
     }
 
     &--back {
@@ -50,7 +49,7 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     -moz-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     &--h1 {
-      background-image: linear-gradient(to right bottom, $cor-primaria, $cor-primaria-hue), url(../../img/card__picture--h1.jpg);
+      background-image: linear-gradient(to right bottom, darken($cor-primaria, 30%), $cor-primaria-hue), url(../../img/card__picture--h1.jpg);
     }
     &--h2 {
       background-image: linear-gradient(to right bottom, $cor-secundaria, $cor-secundaria-hue), url(../../img/card__picture--h2.jpg);
@@ -71,8 +70,8 @@
       border-collapse: collapse;
       width: 100%;
       & th, td {
-          padding: .8rem;
-          text-align: center !important;
+        padding: .8rem;
+        text-align: center !important;
       }
       & tr:nth-of-type(even) { 
         background: darken($cor-branco, 6.3%); 

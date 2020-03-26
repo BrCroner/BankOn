@@ -130,6 +130,13 @@ h2 {
     font-size: 1.2rem;
 }
 
-footer, footer .paragraph {
-    font-size: 1.3rem;
+footer, .footer .paragraph {
+  font-size: 1.3rem;
+  & .heading-tertiary {
+	font-size: 1.5rem;
+	letter-spacing: 0.05rem;
+	font-family: 'gilroy-light';
+	text-transform: none;
+    color: $sub-titulo;
+  }
 }

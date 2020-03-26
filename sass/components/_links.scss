@@ -1,0 +1,19 @@
+.link {
+	color: inherit;
+  text-decoration: none;
+  border-bottom: .2rem solid $cor-primaria;
+  background-image: linear-gradient(120deg, $cor-primaria, $cor-primaria);
+  background-repeat: no-repeat;
+    background-size: 100% 0.0em;
+    background-position: 0 100%;
+    transition: background-size 0.125s ease-in;
+    transition-property: background-size;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+  &:hover {
+    border-color: $cor-primaria;
+    color: $cor-branco;
+    background-size: 100% 100%;
+  }
+}

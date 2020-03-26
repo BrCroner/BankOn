@@ -121,6 +121,9 @@ body {
 .fixed-nav .site-wrap {
   transform: scale(1); }
 
+img {
+  width: 100%; }
+
 @font-face {
   font-family: 'gilroy-light';
   src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"), url("../fonts/gilroy-light-webfont.woff") format("woff");
@@ -220,8 +223,14 @@ h2 {
 .footnotes {
   font-size: 1.2rem; }
 
-footer, footer .paragraph {
+footer, .footer .paragraph {
   font-size: 1.3rem; }
+  footer .heading-tertiary, .footer .paragraph .heading-tertiary {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-family: 'gilroy-light';
+    text-transform: none;
+    color: #6b717f; }
 
 .u-center-text {
   text-align: center; }
@@ -235,8 +244,14 @@ footer, footer .paragraph {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
-.u-center-text {
-  text-align: center; }
+.u-margin-top-small {
+  margin-top: 1.5rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
 
 .no-select {
   -webkit-touch-callout: none;
@@ -385,7 +400,7 @@ footer, footer .paragraph {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     -moz-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
     .card__picture--h1 {
-      background-image: linear-gradient(to right bottom, #00bfb2, #3DCAC0), url(../../img/card__picture--h1.jpg); }
+      background-image: linear-gradient(to right bottom, #002623, #3DCAC0), url(../../img/card__picture--h1.jpg); }
     .card__picture--h2 {
       background-image: linear-gradient(to right bottom, #11205f, #2D55F7), url(../../img/card__picture--h2.jpg); }
   .card__heading {
@@ -436,12 +451,25 @@ footer {
   color: #6b717f;
   margin-bottom: 0;
   padding: 4rem 0; }
-  footer .heading-tertiary {
-    color: #2b303a; }
+  footer img {
+    width: 100%; }
   footer ul {
     list-style-type: none; }
+    footer ul li a {
+      color: inherit;
+      padding: .7rem .5rem .7rem 0;
+      text-decoration: none;
+      transition: all .5s; }
+      footer ul li a:hover {
+        color: #00bfb2; }
+    footer ul li:not(:last-child) {
+      margin-bottom: .5rem; }
   footer .footer {
-    border-top: 1px solid #d2d2d7; }
+    z-index: 10;
+    border-top: 1px solid #d2d2d7;
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 1rem !important;
+    padding-bottom: 2rem; }
     footer .footer [class^="col-"] {
       margin-top: 2.5rem; }
     footer .footer--social-media {
@@ -457,7 +485,17 @@ footer {
           margin-right: 2rem; }
       footer .footer--social-media--icon {
         height: 3rem;
-        width: 3rem; }
+        width: 3rem;
+        fill: #6b717f; }
+        footer .footer--social-media--icon:hover path {
+          fill: #00bfb2; }
+    footer .footer-logo {
+      position: relative; }
+      footer .footer-logo__img {
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        height: 8rem; }
   footer span {
     color: #e84855; }
 
@@ -479,6 +517,24 @@ footer {
     list-style: none; }
   .footnotes ol li:not(:last-child), .footnotes ul li:not(:last-child) {
     margin-bottom: .8rem; }
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.2rem solid #00bfb2;
+  background-image: linear-gradient(120deg, #00bfb2, #00bfb2);
+  background-repeat: no-repeat;
+  background-size: 100% 0.0em;
+  background-position: 0 100%;
+  transition: background-size 0.125s ease-in;
+  transition-property: background-size;
+  transition-duration: 0.125s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s; }
+  .link:hover {
+    border-color: #00bfb2;
+    color: #fff;
+    background-size: 100% 100%; }
 
 nav {
   background: linear-gradient(to right, #00b5a8, #00d9ca);
@@ -678,11 +734,21 @@ li.menu__logo {
   .section-pricing-plans .footnotes {
     border-bottom: none; }
 
-.section-app img {
-  width: 100%; }
-
-.section-app .badges {
-  margin-top: 8rem; }
-  .section-app .badges--ios, .section-app .badges--google-play {
-    width: auto;
-    height: 5rem; }
+.section-app {
+  margin-bottom: 12rem; }
+  .section-app img {
+    width: 100%; }
+  .section-app .smartphone {
+    position: relative; }
+    .section-app .smartphone--img {
+      width: 200% !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-28%) translateX(-60%);
+      -webkit-transform: translateY(-28%) translateX(-60%); }
+  .section-app .badges {
+    margin-top: 8rem; }
+    .section-app .badges--ios, .section-app .badges--google-play {
+      width: auto;
+      height: 5rem; }

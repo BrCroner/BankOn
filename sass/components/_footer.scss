@@ -2,14 +2,32 @@ footer {
   color: $sub-titulo;
   margin-bottom: 0;
   padding: 4rem 0;
-  & .heading-tertiary {
-    color: $titulo;
+  & img {
+    width: 100%;
   }
   & ul {
     list-style-type: none;
+    & li {
+      & a {
+        color: inherit;
+        padding: .7rem .5rem .7rem 0;
+        text-decoration: none;
+        transition: all .5s;
+        &:hover {
+          color: $cor-primaria;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+    }
   }
   .footer {
+    z-index: 10;
     border-top: 1px solid #d2d2d7;
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 1rem !important;
+    padding-bottom: 2rem;
     [class^="col-"] {
       margin-top: 2.5rem;
     }
@@ -27,6 +45,19 @@ footer {
       &--icon {
         height: 3rem;
         width: 3rem;
+        fill: $sub-titulo;
+        &:hover path {
+          fill: $cor-primaria;
+        }
+      }
+    }
+    &-logo {
+      position: relative;
+      &__img {
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        height: 8rem;
       }
     }
   }

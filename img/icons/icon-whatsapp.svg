@@ -9,8 +9,8 @@
 	.st3{display:none;fill:#E0E0E0;}
 	.st4{display:inline;}
 	.st5{fill:url(#SVGID_1_);}
-	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#4F5052;}
-	.st7{fill:#4F5052;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#6B717F;}
+	.st7{fill:#6B717F;}
 </style>
 <path class="st0" d="M435.1,42H64.9c-12.7,0-23,10.3-23,23v370.2c0,12.7,10.3,23,23,23h199.3V296.9H210v-62.8h54.2v-46.3
 	c0-53.7,32.8-83,80.8-83c23,0,42.7,1.7,48.5,2.5v56.2h-33.3c-26.1,0-31.1,12.4-31.1,30.6v40.1h62.2l-8.1,62.8h-54.1v161h106
@@ -37,7 +37,7 @@
 <g class="st1">
 	<g class="st4">
 		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="123.5595" y1="216.3683" x2="123.5595" y2="25.8058" gradientTransform="matrix(2.0408 0 0 2.0408 -0.9602 3.0356)">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="123.5595" y1="283.6317" x2="123.5595" y2="474.1942" gradientTransform="matrix(2.0408 0 0 -2.0408 -0.9602 1023.4357)">
 			<stop  offset="0" style="stop-color:#20B038"/>
 			<stop  offset="1" style="stop-color:#60D66A"/>
 		</linearGradient>
