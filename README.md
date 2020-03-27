@@ -25,10 +25,10 @@ Projeto visa criar uma nova página inicial para fintech BankOn.
 - [ ] Cartão Bankon
 - [ ] Para sua empresa
 - [ ] Termos e condições
-- [ ] Quem somos
+- [x] Quem somos
 - [ ] Política de Privacidade
 - [ ] Afiliados
-- [ ] Planos
+- [X] Planos, prazos e tarifas
 - [ ] Suporte
-- [ ] FAQ
+- [x] FAQ
 
