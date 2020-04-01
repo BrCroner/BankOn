@@ -188,7 +188,7 @@ h2 {
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
 
 .section-refills h1, .section-refills p {
   color: #fff; }
@@ -222,6 +222,10 @@ h2 {
 
 .footnotes {
   font-size: 1.2rem; }
+
+ul {
+  margin-left: 4rem;
+  margin-bottom: 2rem; }
 
 footer, .footer .paragraph {
   font-size: 1.3rem; }
@@ -824,5 +828,5 @@ a.btn {
       width: auto;
       height: 5rem; }
 
-.plans {
+.row.plans {
   margin-bottom: 4rem !important; }

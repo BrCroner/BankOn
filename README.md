@@ -6,7 +6,7 @@ Projeto visa criar uma nova página inicial para fintech BankOn.
 
 ## Principais características:
 * Animações
-* Acessibilidade Digital WCAG 2.0 -  Site adaptado para pessoas com deficiência
+* Acessibilidade Digital -  Site adaptado para pessoas com deficiência
 * Layout responsivo
   * Mobile
   * Tablet
