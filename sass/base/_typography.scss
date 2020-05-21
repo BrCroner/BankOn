@@ -30,17 +30,20 @@ h2 {
 
 //BANNER
 .banner {
-    color: $cor-branco;
+    color: $texto;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 5rem;
     &-main {
+        color: $cor-secundaria;
         display: block;
         font-size: 9rem;
         letter-spacing: .5rem;
-    
         animation-name: moveInLeft;
         animation-duration: .75s;
+        &--primaria {
+            color: $cor-primaria;
+        }
     }
     &-sub {
         font-size: 2rem;
@@ -82,7 +85,7 @@ h2 {
 }
 
 // SECTIONS
-.section{
+.section {
 	// REFILLS
 	&-refills {
     	& h1, p {
@@ -125,12 +128,23 @@ h2 {
 		}
 }
 
+// QUEM SOMOS
+.about-us {
+  ul {
+		margin-left: 3rem;
+  }
+}
+.bankon-growth h4 {
+	font-size: 4rem;
+	letter-spacing: .5rem;
+}
+
+
 // FOOTENOTES
 .footnotes {
     font-size: 1.2rem;
 }
 ul {
-    margin-left: 4rem;
     margin-bottom: 2rem;
 }
 

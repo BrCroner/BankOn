@@ -20,18 +20,17 @@ function Slider(sliderEl) {
 }
 
 Slider.prototype.startSlider = function() {
-  debugger
   this.current = this.sliderEl.querySelector('.current') || this.slides.firstElementChild;
   this.prev = this.current.previousElementSibling || this.slides.lastElementChild;
   this.next = this.current.nextElementSibling || this.slides.firstElementChild;
 }
-  
+
 Slider.prototype.applyClasses = function() {
   this.current.classList.add('current');
   this.prev.classList.add('prev');
   this.next.classList.add('next');
 }
-  
+
 Slider.prototype.move = function(direction) {
   // 1º Remover as classes dos slides atuais
   const classesToRemove = ['prev', 'current', 'next'];

@@ -1,0 +1,9 @@
+.about-us {
+
+  & .footnotes {
+    border-bottom: none !important;
+    & ul {
+      margin-left: 0;
+    }
+  }
+}
