@@ -15,13 +15,13 @@ Projeto visa criar uma nova página inicial para fintech BankOn.
 ## Tecnologias empregadas:
 * HTML5
   * BEM - block, element, modifier
-* SASS 
+* SASS
 * JavaScript *ECMAScript 6*
 
 
 ## Páginas desenvolvidas ou em  desenvolvimento:
 - [x] Página Inicial
-- [ ] Sobre
+- [x] Sobre
 - [ ] Cartão Bankon
 - [ ] Para sua empresa
 - [ ] Termos e condições
@@ -29,6 +29,6 @@ Projeto visa criar uma nova página inicial para fintech BankOn.
 - [ ] Política de Privacidade
 - [ ] Afiliados
 - [X] Planos, prazos e tarifas
-- [ ] Suporte
-- [x] FAQ
+- [x] Suporte
+- [ ] FAQ
 
