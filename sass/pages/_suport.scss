@@ -27,9 +27,17 @@
     height: 2.5rem;
     width: 2.5rem;
   }
+  & button {
+    padding: 1.5rem 4rem;
+    border: solid 1px #d2d2d7;
+    border-radius: .7rem;
+    color: $cor-primaria;
+  }
 }
 .search-result {
   // opacity: 0;
+  // pointer-events: none;
+  // margin-top: -12rem;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;

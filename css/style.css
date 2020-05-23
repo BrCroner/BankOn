@@ -945,6 +945,11 @@ svg.business-check path {
     margin-top: .5rem;
     height: 2.5rem;
     width: 2.5rem; }
+  .search button, .search-result button {
+    padding: 1.5rem 4rem;
+    border: solid 1px #d2d2d7;
+    border-radius: .7rem;
+    color: #00bfb2; }
 
 .search-result {
   -webkit-transition: all 0.30s ease-in-out;

@@ -16,7 +16,7 @@ faqLines.forEach( line => line.addEventListener('keyup', handleClick));
 
 // SEARCH
 const search = document.querySelector('.search');
-const input = document.querySelector('#search');
+const input = document.querySelector('[name="faq"]');
 const faqContent = [...faqLines];
 const sectionResult = document.querySelector('.search-result');
 const resultList = sectionResult.querySelector('ul');
@@ -40,55 +40,46 @@ function createMapName(el) {
 // Separar conteúdo de cada coluna da tabela
 function faqColumns(line) {
   const array = line.querySelectorAll('td')
-  return {
-    faq: array[0],
-    description: array[1],
-    id: array[2],
-  }
+  const answer = `
+    <li>
+      <h4>Faq ID - ${array[2].textContent}</h4>
+      <p class="paragraph">${array[0].textContent}</p>
+      <h4>Descrição:</h4>
+      <p class="paragraph">${array[1].textContent}. |
+        <a class="btn--text" tabindex="0" role="button" href="#${array[2].textContent}">acessar faq →</a>
+      </p>
+    </li>
+  `
+  return resultList.insertAdjacentHTML('afterbegin', answer);;
+  // faq: array[0],
+  // description: array[1],
+  // id: array[2],
 }
-
-// Encontrar palavra na FAQ
-function handleSearch(input) {
-  const typed = filterUpperCase(input.target.value);
-  let result, line, faq, description, id;
-  // Lopping em FaqContent para obter todos os dados
-  line = ([...faqLines].filter(findByWord(typed)));
-  console.log(line.map(faqColumns))
-  // console.log([...line])
-  if(typed === line) {
-    // Pegue o array e use map
-    console.log(line.map(faqColumns))
-  } else if( typed !== line) {
-
-  } else {
-
-  }
-      // if (faq.includes(typed) || description.includes(typed) || id.includes(typed)) {
-        // Criar conteúdo HTML
-        // result = `
-        //   <li>
-        //     <h4>Faq ID - ${id}</h4>
-        //     <p class="paragraph">${faq}</p>
-        //     <h4>Descrição:</h4>
-        //     <p class="paragraph">${description}. |
-        //       <a class="btn--text" tabindex="0" role="button" href="#${id}">acessar faq →</a>
-        //     </p>
-        //   </li>
-        // `;
-      // }
-  // resultList.insertAdjacentHTML('afterbegin', result);
-}
-
-search.addEventListener('keyup', handleSearch);
 
 // Limpar campo de pesquisa
-// function clearResults() {
-//   resultList.querySelectorAll('li').remove();
-//   sectionResult.parentNode.style.opacity = 0;
-//   sectionResult.classList.add('shake');
-//   sectionResult.addEventListener('animationend', function() {
-//     sectionResult.classList.remove('shake');
-//   }, {once: true});
-// }
+function clearResults() {
+  sectionResult.style.opacity = 0;
+  sectionResult.style.pointerEvents = auto;
+  sectionResult.style.marginTop = 0;
+  resultList.querySelectorAll('li').remove();
+  sectionResult.classList.add('shake');
+  sectionResult.addEventListener('animationend', function() {
+  sectionResult.classList.remove('shake');
+ }, {once: true});
+}
+// Encontrar palavra na FAQ
+function handleSearch(input) {
+  if(input.target[0].value) {
+    let result;
+    const typed = filterUpperCase(input.target[0].value);
+    const line = [...faqLines].filter(findByWord(typed));
+    result = line.map(faqColumns)
+    ;
+  }
+}
+
+
+search.addEventListener('submit', handleSearch);
+
 
 
