@@ -1,6 +1,6 @@
 .search, .search-result {
   width: 100%;
-  border: solid 1px #d2d2d7;
+  border: solid 1px $cor-linha;
   border-radius: .7rem;
   margin: 3rem auto;
   padding: 2rem;
@@ -12,7 +12,7 @@
   }
   #search {
     border: none;
-    border-bottom: solid 1px #d2d2d7;
+    border-bottom: solid 1px $cor-linha;
     vertical-align: middle;
     margin: 1rem 2rem .5rem 2rem;
     display: flex;
@@ -23,38 +23,40 @@
     flex: 1 1 auto;
   }
   & .magnifier {
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     height: 2.5rem;
     width: 2.5rem;
   }
   & button {
     padding: 1.5rem 4rem;
-    border: solid 1px #d2d2d7;
+    border: solid 1px $cor-linha;
     border-radius: .7rem;
     color: $cor-primaria;
   }
 }
 .search-result {
-  // opacity: 0;
-  // pointer-events: none;
-  // margin-top: -12rem;
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
+  opacity: 0;
+  margin-top: -18rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   & h3 { text-align: left; }
   & ul li {
     margin: 2rem auto;
     list-style: none;
+    & p:last-child {
+      margin-bottom: 2rem;
+    }
   }
   & ul li:not(:last-child) {
-    border-bottom: solid 1px #d2d2d7;
+    border-bottom: solid 1px $cor-linha;
   }
 }
-
 .faq {
   border-collapse: separate;
-  border: 1px solid #d2d2d7;
+  border: 1px solid $cor-linha;
   border-radius: .7rem;
   -moz-border-radius: .7rem;
   width: 100%;
@@ -75,9 +77,10 @@
       -moz-transition: all 0.30s ease-in-out;
       -ms-transition: all 0.30s ease-in-out;
       -o-transition: all 0.30s ease-in-out;
+      transition: all 0.30s ease-in-out;
       outline: none;
       &:focus {
-        box-shadow: 0 0 5px darken(#d2d2d7, 5%);
+        box-shadow: 0 0 5px darken($cor-linha, 5%);
       }
     }
     &:hover {
@@ -86,8 +89,8 @@
     }
   }
   & th, td {
-    border-top: 1px solid #d2d2d7;
-    border-left: 1px solid #d2d2d7;
+    border-top: 1px solid $cor-linha;
+    border-left: 1px solid $cor-linha;
     text-align: left;
     padding: 1rem 2rem;
     position: relative;
@@ -101,7 +104,7 @@
   }
   &--content {
     border-top: 1px dashed;
-    border-color: #d2d2d7 !important;
+    border-color: $cor-linha !important;
     margin:0; padding: 3rem;
     counter-increment: section;
     position: relative;

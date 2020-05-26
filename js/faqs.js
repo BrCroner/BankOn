@@ -1,7 +1,9 @@
+'use strict';
 //FAQS
 const faqLines = document.querySelectorAll('.clickable-row');
-
+// Expande ao clicar na linha da FAQ
 function handleClick(event) {
+  event.preventDefault();
   // Localizar FAQ pelo ID
   const faqID = event.target.parentNode.getAttribute('href');
   const toggleLine = document.querySelector(faqID);
@@ -9,7 +11,6 @@ function handleClick(event) {
     toggleLine.classList.toggle("toggle");
   }
 }
-
 faqLines.forEach( line => line.addEventListener('click', handleClick));
 // Acessibilidade para pessoas que não usam mouse (•̀ᴗ•́)و ̑̑
 faqLines.forEach( line => line.addEventListener('keyup', handleClick));
@@ -22,22 +23,16 @@ const sectionResult = document.querySelector('.search-result');
 const resultList = sectionResult.querySelector('ul');
 
 // Filtros
+// Localiza palavra
 function findByWord(word) {
   return function(el) {
     return el.textContent.toUpperCase().includes(word)
   }
 }
 // Palavra em caixa alta
-function filterUpperCase(word) {
-  return word.toUpperCase()
-}
-// Remover #
-function createMapName(el) {
-  let item = el.attributes[1].value.split('');
-  item.splice(0, 1);
-  return item.join('');
-}
-// Separar conteúdo de cada coluna da tabela
+const filterUpperCase = (word) => word.toUpperCase();
+
+// Criar conteúdo HTML para cada linha.
 function faqColumns(line) {
   const array = line.querySelectorAll('td')
   const answer = `
@@ -50,35 +45,37 @@ function faqColumns(line) {
       </p>
     </li>
   `
-  return resultList.insertAdjacentHTML('afterbegin', answer);;
+  return resultList.insertAdjacentHTML('beforeend', answer);
   // faq: array[0],
   // description: array[1],
   // id: array[2],
 }
 
-// Limpar campo de pesquisa
-function clearResults() {
-  sectionResult.style.opacity = 0;
-  sectionResult.style.pointerEvents = auto;
-  sectionResult.style.marginTop = 0;
-  resultList.querySelectorAll('li').remove();
-  sectionResult.classList.add('shake');
-  sectionResult.addEventListener('animationend', function() {
-  sectionResult.classList.remove('shake');
- }, {once: true});
+// Toggle visível
+function visible() {
+  resultList.classList.toggle('visible');
+}
+if(!resultList.childElementCount) {
+  sectionResult.style.opacity = "0";
+  sectionResult.style.marginTop = "-18rem";
+  sectionResult.style.pointerEvents = "none";
 }
 // Encontrar palavra na FAQ
 function handleSearch(input) {
+  event.preventDefault();
+  let li = resultList.querySelectorAll('li');
+  li.forEach( el => el.remove());
   if(input.target[0].value) {
-    let result;
+    sectionResult.style.marginTop = "0rem";
+    setTimeout(() => sectionResult.style.opacity = "1", 180 );
+    sectionResult.style.pointerEvents = "auto";
     const typed = filterUpperCase(input.target[0].value);
     const line = [...faqLines].filter(findByWord(typed));
-    result = line.map(faqColumns)
-    ;
+    const result = line.map(faqColumns);
+    return result;
   }
 }
-
-
+// EventListenet observando botão "Pesquisar"
 search.addEventListener('submit', handleSearch);
 
 

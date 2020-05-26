@@ -942,7 +942,7 @@ svg.business-check path {
     font-family: inherit;
     flex: 1 1 auto; }
   .search .magnifier, .search-result .magnifier {
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     height: 2.5rem;
     width: 2.5rem; }
   .search button, .search-result button {
@@ -952,15 +952,20 @@ svg.business-check path {
     color: #00bfb2; }
 
 .search-result {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out; }
+  opacity: 0;
+  margin-top: -18rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   .search-result h3 {
     text-align: left; }
   .search-result ul li {
     margin: 2rem auto;
     list-style: none; }
+    .search-result ul li p:last-child {
+      margin-bottom: 2rem; }
   .search-result ul li:not(:last-child) {
     border-bottom: solid 1px #d2d2d7; }
 
@@ -985,6 +990,7 @@ svg.business-check path {
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
     outline: none; }
     .faq .clickable-row > *:focus {
       box-shadow: 0 0 5px #c5c5cb; }
