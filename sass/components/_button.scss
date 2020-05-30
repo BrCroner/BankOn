@@ -1,18 +1,24 @@
 .btn {
-	letter-spacing: .2rem;
+  letter-spacing: .2rem;
+  max-height: 6rem;
   text-transform: uppercase;
   outline: none;
-	padding: 1.5rem 4rem !important;
+	padding: 1.7rem 4rem !important;
   border-radius: .7rem !important;
   &:link,
   &:visited {
+    border-radius: .7rem !important;
   	text-decoration: none;
     display: inline-block;
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     position: relative;
   }
   &--white {
-    border-radius: .7rem !important;
+
     background-color: $cor-branco;
     color: $texto;
     &::after {
@@ -36,16 +42,13 @@
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
   }
   &:focus {
-	outline:0;
+	  outline:0;
 	}
   &::after {
     content: "";
     display: inline-block;
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
     transition: all .3s;
   }

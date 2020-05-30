@@ -94,6 +94,9 @@
      -webkit-transform: translate(-50%, -50%);
      text-align: center;
      width: 90%;
+     & .btn {
+       padding-top: 1.8rem !important;
+     }
    }
    &__price-box {
      color: $cor-branco;

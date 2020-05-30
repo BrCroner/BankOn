@@ -51,13 +51,10 @@ function faqColumns(line) {
   // id: array[2],
 }
 
-// Toggle visível
-function visible() {
-  resultList.classList.toggle('visible');
-}
+// Esconder "search-result"
 if(!resultList.childElementCount) {
   sectionResult.style.opacity = "0";
-  sectionResult.style.marginTop = "-18rem";
+  sectionResult.style.marginTop = "-15rem";
   sectionResult.style.pointerEvents = "none";
 }
 // Encontrar palavra na FAQ
@@ -67,7 +64,7 @@ function handleSearch(input) {
   li.forEach( el => el.remove());
   if(input.target[0].value) {
     sectionResult.style.marginTop = "0rem";
-    setTimeout(() => sectionResult.style.opacity = "1", 180 );
+    setTimeout(() => sectionResult.style.opacity = "1", 150 );
     sectionResult.style.pointerEvents = "auto";
     const typed = filterUpperCase(input.target[0].value);
     const line = [...faqLines].filter(findByWord(typed));

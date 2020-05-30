@@ -6,7 +6,25 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="BankOn" content="Uma conta digital que permite pagar contas, transferir valores e realizar recarregas. Além de contar com um cartão Mastercard® Internacional.">
   <meta itemprop="hasCurrency" content="BRL">
-	<link rel="stylesheet" href="./css/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#00bfb2">
+  <meta name="theme-color" content="#00bfb2">
+  <meta itemprop="hasCurrency" content="BRL">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/nav.js" defer></script>
+  <script src="./js/slider.js" defer></script>
 	<title>BankOn | Página Inicial</title>
 </head>
 <body>
@@ -25,7 +43,7 @@
     <ul class="indicator">
       <li class="menu__logo"><img src="img/logo.svg" alt="logo"></li>
       <li><a href="#" class="active">Página Inicial</a></li>
-      <li><a href="#">Afiliados</a></li>
+      <li><a href="afiliados.html">Afiliados</a></li>
       <li><a href="planos.html">Planos</a></li>
       <li><a href="suporte.html">Suporte</a></li>
       <li><a href="#">Criar conta</a></li>
@@ -330,10 +348,10 @@
             </p>
             <div class="row badges">
               <div class="col-1-of-4">
-                <a href="#" target="_blank" rel="noopener noreferrer"><img class="badges--ios" src="img/app-store-badge.svg" alt="Google Play"></a>
+                <a href="https://apps.apple.com/br/app/bankon/id1504726741" target="_blank" rel="noopener noreferrer"><img class="badges--ios" src="img/app-store-badge.svg" alt="Google Play"></a>
               </div>
             	<div class="col-1-of-4">
-                <a href="https://play.google.com/store/apps/details?id=br.com.bankon" target="_blank" rel="noopener noreferrer"><img class="badges--google-play" src="img/google-play-badge.png" alt="Google Play"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.bankon.appbankon" target="_blank" rel="noopener noreferrer"><img class="badges--google-play" src="img/google-play-badge.png" alt="Google Play"></a>
             	</div>
               <div class="col-1-of-4"></div>
             	<div class="col-1-of-4"></div>
@@ -356,9 +374,9 @@
         <div class="col-1-of-5">
           <h3 class="heading-tertiary u-margin-bottom-small">Serviços</h3>
           <ul>
-            <li>Cartão BankOn</li>
+            <li><a href="cartao.html">Cartão BankOn</a></li>
             <li>Conta empresarial</li>
-            <li>Plano de afiliados</li>
+            <li><a href="afiliados.html">Plano de afiliados</a></li>
           </ul>
         </div>
         <div class="col-1-of-5">
@@ -372,10 +390,21 @@
      		<div class="col-2-of-5">
        		<h3 class="heading-tertiary u-margin-bottom-small">Redes sociais</h3>
        		<ul class="footer--social-media">
-         		<li><a href="#" target="_blank" rel="whatsapp"><img class="footer--social-media--icon" src="img/icons/icon-whatsapp.svg" alt="whatsapp" srcset=""></a></li>
-         		<li><a href="#" target="_blank" rel="instagram"><img class="footer--social-media--icon" src="img/icons/icon-instagram.svg" alt="instagram" srcset=""></a></li>
-         		<li><a href="#" target="_blank" rel="facebook"><img class="footer--social-media--icon" src="img/icons/icon-facebook.svg" alt="facebook" srcset=""></a></li>
-         		<li><a href="#" target="_blank" rel="twitter"><img class="footer--social-media--icon" src="img/icons/icon-twitter.svg" alt="twitter" srcset=""></a></li>
+         		<li>
+              <a href="https://www.instagram.com/bankonoficial/?hl=pt-br" target="_blank" rel="instagram">
+                <img class="footer--social-media--icon" src="img/icons/icon-instagram.svg" alt="instagram" srcset="">
+              </a>
+            </li>
+         		<li>
+              <a href="https://www.facebook.com/bankonoficial/" target="_blank" rel="facebook">
+                <img class="footer--social-media--icon" src="img/icons/icon-facebook.svg" alt="facebook" srcset="">
+              </a>
+            </li>
+         		<li>
+              <a href="https://twitter.com/bankonoficial" target="_blank" rel="twitter">
+                <img class="footer--social-media--icon" src="img/icons/icon-twitter.svg" alt="twitter" srcset="">
+              </a>
+            </li>
        		</ul>
        		<p class="paragraph">
          		<span>😘</span>&nbsp; Adoramos interagir com nossos clientes.
@@ -398,7 +427,5 @@
 
   </div>
 </div>
-  <script src="./js/nav.js"></script>
-  <script src="./js/slider.js"></script>
 </body>
 </html>

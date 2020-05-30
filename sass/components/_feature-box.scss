@@ -1,0 +1,26 @@
+.feature-box {
+  background-color: rgba($cor-branco, .8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($cor-preto, .15);
+  transition: transform .3s;
+  &__img {
+    &--calendar {
+      fill: $cor-primaria;
+    }
+    height: 6rem;
+  }
+  &__heading {
+    color: $titulo;
+  }
+  &__text {
+
+  }
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  }
+
+}
