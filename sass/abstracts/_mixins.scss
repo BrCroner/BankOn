@@ -12,11 +12,46 @@
     -ms-border-radius: $radius;
     border-radius: $radius;
   }
-  
-  @mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// GERENCIADOR DE MEDIA QUERY
+
+/*
+0 - 600px:        telefone
+600 - 900px:      tablet-retrato
+900 - 1200px:     tablet-paisagem
+[1200 - 1800]:    Local onde o código padrão se aplica.
+1800px + :        desktop-grande
+
+CHAVEADOR DE ARGUMENTOS
+
+1em = 16px
+
+* telefone        - 600/16px = 37.5em
+* tab-retrato     - 900/16px = 56.25em
+* tab-paisagem    - 1200/16 = 75em
+* desk-grande     - 1800/16 = 112.5em
+
+༼つಠ益ಠ༽つ ─=≡ΣO)) */
+
+@mixin responsivo($breakpoint) {
+  @if $breakpoint == telefone {
+    @media (max-whith: 37.5em) { @content };
   }
+  @if $breakpoint == tab-retrato {
+    @media (max-whith: 56.25em) { @content };
+  }
+  @if $breakpoint == tab-paisagem {
+    @media (max-whith: 75em) { @content };
+  }
+  @if $breakpoint == desk-grande {
+    @media (min-whith: 112.5em) { @content };
+  }
+}

@@ -27,8 +27,8 @@ Projeto visa criar uma nova página inicial para fintech BankOn.
 - [ ] Termos e condições
 - [x] Quem somos
 - [ ] Política de Privacidade
-- [ ] Afiliados
-- [X] Planos, prazos e tarifas
+- [x] Afiliados
+- [x] Planos, prazos e tarifas
 - [x] Suporte
-- [ ] FAQ
+- [x] FAQ
 
