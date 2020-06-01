@@ -176,16 +176,23 @@ CHAVEADOR DE ARGUMENTOS
   to {
     background-position: 200% center; } }
 
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeout {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 @keyframes pulse {
-  0% {
-    color: #11205f;
-    transform: scale(1); }
-  25% {
-    color: #2D55F7;
-    transform: scale(1.015); }
-  50% {
-    color: #11205f;
-    transform: scale(1); } }
+  from {
+    box-shadow: 0 0 0 0px #00bfb2; }
+  to {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0); } }
 
 *,
 *::after,
@@ -927,6 +934,45 @@ svg.business-check path {
   transform: skewY(-5deg); }
   .section-affiliates__cards > * {
     transform: skewY(5deg); }
+
+.credit-card {
+  position: relative;
+  margin-top: -4rem;
+  text-align: center; }
+  .credit-card__card-img {
+    width: 80%; }
+  .credit-card__button {
+    max-width: 5rem;
+    max-height: 5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #00bfb2;
+    display: block;
+    padding: .9rem 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+    animation: fadein .5s;
+    animation: pulse 1.5s infinite; }
+    .credit-card__button:hover {
+      color: #00bfb2;
+      background: white; }
+
+#bt1 {
+  position: absolute;
+  left: 77%;
+  bottom: 44%; }
+
+#bt2 {
+  position: absolute;
+  left: 48%;
+  top: 22%; }
+
+#bt3 {
+  position: absolute;
+  left: 29%;
+  bottom: 46%; }
 
 .section-card--wrapper li {
   cursor: default;

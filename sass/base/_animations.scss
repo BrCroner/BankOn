@@ -195,20 +195,16 @@
     }
 }
 
-// Animação pulse
+// Animações
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 @keyframes pulse {
-    0% {
-        color: $cor-secundaria;
-        transform: scale(1);
-      }
-
-      25% {
-        color: $cor-secundaria-hue;
-        transform: scale(1.015);
-      }
-
-      50% {
-        color: $cor-secundaria;
-        transform: scale(1);
-      }
+  from { box-shadow: 0 0 0 0px $cor-primaria; }
+  to { box-shadow: 0 0 0 15px rgba(0, 0, 0, 0); }
 }
