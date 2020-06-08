@@ -1,19 +1,33 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-    
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        @include responsivo(tab-retrato) {
+          margin-bottom: $gutter-vertical-pequeno;
+        }
+    }
+    @include responsivo(tab-retrato) {
+      max-width: 50rem;
     }
 
     @include clearfix;
 
     //Seleciona todos os atributos classe que iniciam com a palavra "col-".
     [class^="col-"] {
-        float:left;    
-        
+        float:left;
+
         &:not(:last-child){
-            margin-right: $gutter-horizontal;
+          margin-right: $gutter-horizontal;
+          @include responsivo(tab-retrato) {
+            margin-right: 0;
+            margin-bottom: $gutter-vertical-pequeno;
+          }
+        }
+
+        @include responsivo(tab-retrato) {
+          width: 100% !important;
         }
     }
     //Calc = (100% do width - (número de gutters) * #{$gutter-horizontal}) / (número de colunas)

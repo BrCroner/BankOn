@@ -41,6 +41,9 @@ body {
 .site-wrap {
   transform: scale(.98);
   transition: transform .5s;
+  @include responsivo(tab-retrato) {
+    transform: scale(1);
+  }
 }
 .fixed-nav .site-wrap {
   transform: scale(1);

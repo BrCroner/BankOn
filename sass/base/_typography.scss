@@ -1,13 +1,17 @@
 @font-face {
     font-family: 'gilroy-light';
-    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+    src: url('../fonts/gilroy-light-webfont.otf') format('otf'),
+         url('../fonts/gilroy-light-webfont.etf') format('eot'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff2'),
          url('../fonts/gilroy-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'gilroy-extrabold';
-    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+    src: url('../fonts/gilroy-extrabold-webfont.otf') format('otf'),
+         url('../fonts/gilroy-extrabold-webfont.eot') format('eot'),
+         url('../fonts/gilroy-extrabold-webfont.woff') format('woff2'),
          url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -19,6 +23,8 @@ body {
     line-height: 1.7;
     background-color: $cor-cinza;
     color: $texto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
 h1, h3 {
@@ -30,31 +36,31 @@ h2 {
 
 //BANNER
 .banner {
-    color: $texto;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 5rem;
-    &-main {
-        color: $cor-secundaria;
-        display: block;
-        font-size: 9rem;
-        letter-spacing: .5rem;
-        animation-name: moveInLeft;
-        animation-duration: .75s;
-        &--primaria {
-            color: $cor-primaria;
-        }
+  color: $texto;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+  &-main {
+    color: $cor-secundaria;
+    display: block;
+    font-size: 9rem;
+    letter-spacing: .5rem;
+    animation-name: moveInLeft;
+    animation-duration: .75s;
+    &--primaria {
+        color: $cor-primaria;
     }
-    &-sub {
-        font-size: 2rem;
-        display: block;
-        font-family: 'gilroy-light';
-        letter-spacing: 1rem;
-        line-height: 4rem;
-    
-        animation-name: moveInRight;
-        animation-duration: 0.75s;
-    }
+  }
+  &-sub {
+    font-size: 2rem;
+    display: block;
+    font-family: 'gilroy-light';
+    letter-spacing: 1rem;
+    line-height: 4rem;
+
+    animation-name: moveInRight;
+    animation-duration: 0.75s;
+  }
 }
 
 //HEADING
@@ -64,11 +70,17 @@ h2 {
         color: $titulo;
         text-transform: uppercase;
         font-size: 4rem;
+        @include responsivo(telefone) {
+          font-size: 2.5rem;
+        }
     }
     &-secondary {
         color: $sub-titulo;
         display: inline-block;
         font-size: 2.5rem;
+        @include responsivo(telefone) {
+          font-size: 1.5rem;
+        }
     }
     &-tertiary {
         color: $titulo;
@@ -94,7 +106,7 @@ h2 {
     	& h2 {
         	color: lighten($sub-titulo, 20%);
     	}
-			
+
 		}
 		// PRICING-PLANS
 		&-pricing-plans {
@@ -137,6 +149,13 @@ h2 {
 .bankon-growth h4 {
 	font-size: 4rem;
 	letter-spacing: .5rem;
+}
+// CARTÃO
+.credit-card__close  {
+  font-size: 2rem;
+  padding-right: 3rem;
+  font-weight: bold;
+  font-family:'gilroy-extrabold';
 }
 
 

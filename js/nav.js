@@ -1,7 +1,6 @@
 // MENU
 const nav = document.querySelector('#menu');
 const topOfNav = nav.offsetTop;
-
 function fixNav() {
   if(window.scrollY >= topOfNav) {
     document.body.style.paddingTop = nav.offsetHeight + 'px';
@@ -13,3 +12,11 @@ function fixNav() {
 }
 
 window.addEventListener('scroll', fixNav);
+
+const hamburgerButton = document.querySelector('.indicator');
+hamburgerButton.addEventListener('click', function() {
+  const menuItens = hamburgerButton.querySelectorAll('li');
+  const navIcon = document.getElementById('nav-icon');
+  menuItens.forEach(el => el.classList.toggle('indicator__open'));
+  navIcon.classList.toggle('open');
+})

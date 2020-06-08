@@ -42,16 +42,8 @@ CHAVEADOR DE ARGUMENTOS
 ༼つಠ益ಠ༽つ ─=≡ΣO)) */
 
 @mixin responsivo($breakpoint) {
-  @if $breakpoint == telefone {
-    @media (max-whith: 37.5em) { @content };
-  }
-  @if $breakpoint == tab-retrato {
-    @media (max-whith: 56.25em) { @content };
-  }
-  @if $breakpoint == tab-paisagem {
-    @media (max-whith: 75em) { @content };
-  }
-  @if $breakpoint == desk-grande {
-    @media (min-whith: 112.5em) { @content };
-  }
+  @if $breakpoint == telefone { @media (max-width: 37.5em) { @content } };
+  @if $breakpoint == tab-retrato { @media (max-width: 56.25em) { @content } };
+  @if $breakpoint == tab-paisagem { @media (max-width: 75em) { @content } };
+  @if $breakpoint == desk-grande { @media (min-width: 112.5em) { @content } };
 }
