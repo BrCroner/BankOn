@@ -54,6 +54,10 @@
         top: 50%;
         transform: translateY(-28%) translateX(-60%);
         -webkit-transform: translateY(-28%) translateX(-60%);
+        @include responsivo(telefone) {
+          position: relative;
+          width: 100% !important;
+        }
       }
     }
 		& .badges {

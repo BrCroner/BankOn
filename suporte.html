@@ -29,6 +29,12 @@
 <body>
   <nav id="menu">
     <ul class="indicator">
+      <li id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </li>
       <li class="menu__logo"><img src="img/logo.svg" alt="logo"></li>
       <li><a href="index.html">Página Inicial</a></li>
       <li><a href="afiliados.html">Afiliados</a></li>
@@ -51,10 +57,11 @@
             <h1 class="heading-primary u-margin-bottom-medium">
               Está precisando de ajuda?
             </h1>
+          </div>
 
-            <div class="col-1-of-1 u-margin-bottom-medium">
-              <p>Ut pretium ante et orci semper, sed sollicitudin ex congue. Donec nisi purus, tincidunt ac auctor sed, hendrerit eu erat. Ut sit amet volutpat lacus. Vestibulum eu eros ut enim imperdiet malesuada. Sed efficitur scelerisque justo, a facilisis massa tempor vitae. Aliquam erat volutpat. Donec tincidunt nunc sit amet ex blandit, ut posuere quam ullamcorper. Proin ante nunc, consectetur quis sem ut.</p>
-            </div>
+          <div class="col-1-of-1 u-margin-bottom-medium">
+            <p>Ut pretium ante et orci semper, sed sollicitudin ex congue. Donec nisi purus, tincidunt ac auctor sed, hendrerit eu erat. Ut sit amet volutpat lacus. Vestibulum eu eros ut enim imperdiet malesuada. Sed efficitur scelerisque justo, a facilisis massa tempor vitae. Aliquam erat volutpat. Donec tincidunt nunc sit amet ex blandit, ut posuere quam ullamcorper. Proin ante nunc, consectetur quis sem ut.</p>
+          </div>
 
           <form name="faq" class="search u-margin-bottom-small">
             <img class="magnifier" src="./img/icons/icon-search.svg" alt="">
@@ -68,9 +75,7 @@
               <ul></ul>
             </div>
           </div>
-
           <div class="col-1-of-1">
-
             <table class="faq u-margin-bottom-big">
               <thead>
                   <tr>
@@ -120,49 +125,48 @@
                       </div>
                     </div>
                   </td>
-              </tr>
+                </tr>
 
-              <tr class='clickable-row' href="#L003">
-                <td tabindex=0>Como recupero minha senha?</td>
-                <td>Recuperar senha</td>
-                <td>L003</td>
-              </tr>
-              <tr id="L003" class="toggle">
-                <td colspan="3">
-                  <div class="row">
-                    <div class="col-1-of-2">
-                      <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
-                      <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
-                      <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
-                      <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
+                <tr class='clickable-row' href="#L003">
+                  <td tabindex=0>Como recupero minha senha?</td>
+                  <td>Recuperar senha</td>
+                  <td>L003</td>
+                </tr>
+                <tr id="L003" class="toggle">
+                  <td colspan="3">
+                    <div class="row">
+                      <div class="col-1-of-2">
+                        <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
+                        <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
+                        <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
+                        <p class="faq--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste iusto quas eligendi corporis id eius corrupti temporibus velit?</p>
+                      </div>
+                      <div class="col-1-of-2">
+                        <img src="./img/faqs/L001.png" alt="">
+                      </div>
                     </div>
-                    <div class="col-1-of-2">
-                      <img src="./img/faqs/L001.png" alt="">
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="row">
-            <div class="col-1-of-2">
-              <img class="u-margin-bottom-medium" src="img/support.png" alt="Equipe de suporte">
-              <h3 class="heading-tertiary">Horário de atendimento</h3>
-              <p class="paragraph">
-                O horário de atendimento da equipe de suporte é de segunda à sexta, das <time datetime="09:00:00">9</time> às <time datetime="17:00:00">17</time> horas. Acesse nosso chat para falar com um atendente e resolver seu problema, fazer uma reclamação, elogio ou uma denúncia.
-              </p>
-              <a class="btn--text" href="#">Falar com atendente &rarr;</a>
-            </div>
-            <div class="col-1-of-2">
-              <img class="u-margin-bottom-medium" src="img/e-mail.jpg" alt="E-mail SAC">
-              <h3 class="heading-tertiary">E-mail SAC</h3>
-              <p class="paragraph">
-                O horário de atendimento da equipe de suporte é de segunda à sexta, das 9 às 17 horas. Acesse nosso chat para falar com um atendente e resolver seu problema, fazer uma reclamação, elogio ou uma denúncia.
-              </p>
-              <a class="btn--text" href="mailto:sac@relacionamentobankon.com.br">Enviar e-mail &rarr;</a>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <img class="u-margin-bottom-medium" src="img/support.png" alt="Equipe de suporte">
+            <h3 class="heading-tertiary">Horário de atendimento</h3>
+            <p class="paragraph">
+              O horário de atendimento da equipe de suporte é de segunda à sexta, das <time datetime="09:00:00">9</time> às <time datetime="17:00:00">17</time> horas. Acesse nosso chat para falar com um atendente e resolver seu problema, fazer uma reclamação, elogio ou uma denúncia.
+            </p>
+            <a class="btn--text" href="#">Falar com atendente &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <img class="u-margin-bottom-medium" src="img/e-mail.jpg" alt="E-mail SAC">
+            <h3 class="heading-tertiary">E-mail SAC</h3>
+            <p class="paragraph">
+              O horário de atendimento da equipe de suporte é de segunda à sexta, das 9 às 17 horas. Acesse nosso chat para falar com um atendente e resolver seu problema, fazer uma reclamação, elogio ou uma denúncia.
+            </p>
+            <a class="btn--text" href="mailto:sac@relacionamentobankon.com.br">Enviar e-mail &rarr;</a>
           </div>
         </div>
       </section>
