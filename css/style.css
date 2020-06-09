@@ -1076,6 +1076,11 @@ svg.business-check path {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
+  @media (max-width: 37.5em) {
+    .credit-card {
+      height: 35rem;
+      background-size: cover;
+      background-position: -1rem .5rem; } }
   .credit-card__card-img {
     width: 80%; }
   .credit-card__button, .credit-card__close {
@@ -1122,16 +1127,27 @@ input {
   position: absolute;
   left: 77%;
   bottom: 44%; }
+  @media (max-width: 37.5em) {
+    #bt1 {
+      bottom: 27%; } }
 
 #bt2 {
   position: absolute;
   left: 48%;
   top: 22%; }
+  @media (max-width: 37.5em) {
+    #bt2 {
+      top: 25%;
+      left: 51%; } }
 
 #bt3 {
   position: absolute;
   left: 29%;
   bottom: 46%; }
+  @media (max-width: 37.5em) {
+    #bt3 {
+      left: 21%;
+      bottom: 30%; } }
 
 #input1:checked ~ #content1,
 #input2:checked ~ #content2,

@@ -6,6 +6,11 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  @include responsivo(telefone) {
+    height: 35rem;
+    background-size: cover;
+    background-position: -1rem .5rem;
+  }
   &__card-img {
     width: 80%;
   }
@@ -55,9 +60,32 @@ input { display: none; }
 }
 
 
-#bt1 { position: absolute; left: 77%; bottom: 44%; }
-#bt2 { position: absolute; left: 48%; top: 22%; }
-#bt3 { position: absolute; left: 29%; bottom: 46%; }
+#bt1 {
+  position: absolute;
+  left: 77%;
+  bottom: 44%;
+  @include responsivo(telefone) {
+    bottom: 27%;
+  }
+}
+#bt2 {
+  position: absolute;
+  left: 48%;
+  top: 22%;
+  @include responsivo(telefone) {
+    top: 25%;
+    left: 51%;
+  }
+}
+#bt3 {
+  position: absolute;
+  left: 29%;
+  bottom: 46%;
+  @include responsivo(telefone) {
+    left: 21%;
+    bottom: 30%;
+  }
+}
 
 #input1:checked ~ #content1,
 #input2:checked ~ #content2,
