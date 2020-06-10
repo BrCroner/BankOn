@@ -57,6 +57,7 @@
         @include responsivo(telefone) {
           position: relative;
           width: 100% !important;
+          margin: 8rem 0 0rem 3rem !important;
         }
       }
     }
@@ -66,7 +67,10 @@
 				width:auto;
 				height:5rem;
 			}
-		}
+    }
+    & .row :nth-child(2) {
+      margin-bottom: -6rem !important;
+    }
 	}
 }
 

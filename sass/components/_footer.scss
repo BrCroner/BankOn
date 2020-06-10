@@ -60,9 +60,19 @@ footer {
         height: 8rem;
       }
     }
+    &-img__godaddy {
+      @include responsivo(telefone) {
+        width: 40%;
+      }
+    }
+    & [class^="col-"] {
+      @include responsivo(telefone) {
+        width: 100% !important;
+      }
+    }
   }
   & span {
     color: #e84855;
   }
-  
+
 }

@@ -385,6 +385,9 @@ footer, .footer .paragraph {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-top-small {
   margin-top: 1.5rem; }
@@ -659,6 +662,12 @@ footer {
         top: -2rem;
         left: -2rem;
         height: 8rem; }
+    @media (max-width: 37.5em) {
+      footer .footer-img__godaddy {
+        width: 40%; } }
+    @media (max-width: 37.5em) {
+      footer .footer [class^="col-"] {
+        width: 100% !important; } }
   footer span {
     color: #e84855; }
 
@@ -1067,6 +1076,10 @@ svg.business-check path {
   transform: skewY(-5deg); }
   .section-affiliates__cards > * {
     transform: skewY(5deg); }
+  @media (max-width: 37.5em) {
+    .section-affiliates__cards {
+      padding: 8rem 0 !important;
+      margin-bottom: 5rem !important; } }
 
 .credit-card {
   position: relative;
@@ -1203,12 +1216,19 @@ input:checked ~ label .credit-card__button {
       @media (max-width: 37.5em) {
         .section-app .smartphone--img {
           position: relative;
-          width: 100% !important; } }
+          width: 100% !important;
+          margin: 8rem 0 0rem 3rem !important; } }
   .section-app .badges {
     margin-top: 8rem; }
     .section-app .badges--ios, .section-app .badges--google-play {
       width: auto;
       height: 5rem; }
+  .section-app .row :nth-child(2) {
+    margin-bottom: -6rem !important; }
+
+@media (max-width: 37.5em) {
+  .section-plans .table-cell a {
+    display: none !important; } }
 
 .search, .search-result {
   width: 100%;
@@ -1250,6 +1270,11 @@ input:checked ~ label .credit-card__button {
       border: none;
       color: #fff;
       background-color: #00bfb2; }
+    @media (max-width: 37.5em) {
+      .search button, .search-result button {
+        display: inline-block;
+        margin-top: 2rem;
+        width: 100%; } }
 
 .search-result {
   opacity: 0;

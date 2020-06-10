@@ -1,3 +1,8 @@
 .section-plans {
   // margin-bottom: 4rem !important;
+  & .table-cell a {
+    @include responsivo(telefone) {
+      display: none !important;
+    }
+  }
 }
