@@ -1,33 +1,72 @@
 .section {
-  &-card {
-    &--wrapper {
-      & li {
-        cursor: default;
-        list-style-type: none;
-        &:not(:last-child) {
-          margin-bottom: 1rem;
-        }
+  &-benefits {
+    position: relative;
+    [class="col-1-of-3"] {
+      @include responsivo(telefone) {
+        margin-bottom: 2rem !important;
       }
-      & span {
-        color: $cor-primaria;
+    }
+    & .row > :nth-child(3) {
+      @include responsivo(telefone) {
+        margin-bottom: 0!important;
+      }
+    }
+    & .row .composition {
+      @include responsivo(telefone) {
+        position: absolute;
+        bottom: -6rem;
+        left: 6rem;
+      }
+    }
+    & .row :last-child :nth-child(6){
+      @include responsivo(telefone) {
+        margin-bottom: 50rem ;
+      }
+    }
+  }
+  &-card {
+    & li {
+      position: relative;
+      cursor: default;
+      list-style-type: none;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    & span {
+      margin-right: 1rem;
+      color: $cor-primaria;
+      & svg {
+        margin-bottom: -.5rem;
       }
     }
   }
   &-refills {
-    height: 110vh;
+    height: 130vh;
     margin-top: 2rem;
     padding-top: 20rem;
     background-image: linear-gradient(
-        to right bottom,
-        rgba($cor-secundaria, 0.9),
-        rgba($cor-secundaria-hue, 0.9)),
-        url(../../img/background-refills.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
-    -moz-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
-    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+      to right bottom,
+      rgba($cor-secundaria, 0.9),
+      rgba($cor-secundaria-hue, 0.9)),
+      url(../../img/background-refills.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+      -moz-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+      -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+
+    @include responsivo(desk-grande) {
+      height: 120vh;
+    }
+    @include responsivo(telefone) {
+      height: 85vh;
+      padding-top: 10rem;
+      clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+      -moz-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+      -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    }
   }
   &-pricing-plans {
       margin-top: -20rem;
@@ -47,29 +86,45 @@
 		}
     & .smartphone {
       position: relative;
+      @include responsivo(telefone) {
+        margin: 8rem 0 0 5rem !important;
+      }
       &--img {
-        width: 200% !important;
+        width: 180% !important;
+        transform: translateY(-28%) translateX(-60%);
+        -webkit-transform: translateY(-28%) translateX(-60%);
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translateY(-28%) translateX(-60%);
-        -webkit-transform: translateY(-28%) translateX(-60%);
         @include responsivo(telefone) {
-          position: relative;
           width: 100% !important;
-          margin: 8rem 0 0rem 3rem !important;
+          position: relative;
         }
       }
     }
+    & .row :nth-child(2) {
+      @include responsivo(telefone) {
+        margin-bottom: -6rem;
+      }
+    }
 		& .badges {
-			margin-top: 8rem;
+      margin-top: 8rem;
+      @include responsivo(telefone) {
+        display: table;
+        align-items: center;
+        margin: 4rem auto;
+      }
+      & > * {
+        display: inline-block;
+        float: left;
+      }
+      &__apple-store {
+        margin-right: 4rem;
+      }
 			&--ios, &--google-play {
 				width:auto;
 				height:5rem;
 			}
-    }
-    & .row :nth-child(2) {
-      margin-bottom: -6rem !important;
     }
 	}
 }

@@ -14,6 +14,10 @@
     & > * {
       transform: skewY(5deg);
     }
+    @include responsivo(telefone) {
+      padding: 8rem 0 !important;
+      margin-bottom: 5rem !important;
+    }
   }
 }
 

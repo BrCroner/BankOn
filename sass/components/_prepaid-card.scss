@@ -1,20 +1,28 @@
 .prepaid-card {
   list-style: none;
-  display: inline-block;
+  display: table;
+  align-items: center;
+  margin: 2rem auto;
+  @include responsivo(telefone) {
+    // height: auto;
+  }
   & li {
     height: 11rem;
     width: 11rem;
-    display: block;
-    float: left;
     transition: transform ease-in .25s;
+    display: table-cell;
+    vertical-align: middle;
     &:hover{
       transform: scale(1.1) translateY(-.5rem);
     }
     &:not(:last-child) {
       margin-right: 2rem;
     }
-  }
-    & img {
-      width: 10rem;
+    @include responsivo(telefone) {
+      display: inline-block;
     }
+  }
+  & img {
+    width: 10rem;
+  }
 }

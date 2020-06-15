@@ -6,6 +6,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  max-height: 70rem;
   @include responsivo(telefone) {
     height: 35rem;
     background-size: cover;
@@ -59,31 +60,30 @@ input { display: none; }
   }
 }
 
-
 #bt1 {
   position: absolute;
-  left: 77%;
-  bottom: 44%;
+  left: 73%;
+  top: 26%;
   @include responsivo(telefone) {
-    bottom: 27%;
+    top: 50%;
   }
 }
 #bt2 {
   position: absolute;
   left: 48%;
-  top: 22%;
+  top: 12%;
   @include responsivo(telefone) {
-    top: 25%;
+    top: 26%;
     left: 51%;
   }
 }
 #bt3 {
   position: absolute;
-  left: 29%;
-  bottom: 46%;
+  left: 31%;
+  top: 26%;
   @include responsivo(telefone) {
-    left: 21%;
-    bottom: 30%;
+    left: 22%;
+    top: 55%;
   }
 }
 

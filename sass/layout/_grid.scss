@@ -80,5 +80,13 @@
     .col-5-of-6 {
         width: calc(5 * ((100% - 5 * #{$gutter-horizontal}) / 6) + 5 * #{$gutter-horizontal});
     }
+
+    // Footer
+    & [class^="col-1-of-5"], & [class^="col-2-of-5"]{
+
+      & div :last-child {
+        border-bottom: none;
+      }
+    }
 }
 

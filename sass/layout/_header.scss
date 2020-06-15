@@ -1,20 +1,81 @@
 .header {
   height: 90vh;
-  background-image: url(../img/banner-01.jpg);
-  background-size: cover;
-  background-position: center;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  /*clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);*/
-
-  &__text-box {
+  & #parallax {
+    --x: 0px;
+    --y: 0px;
+    background: #fff url(/img/banner-01.jpg) repeat 0 0;
+    background-position: center;
+    background-size: cover;
+    background-position: var(--x) var(--y);
+    left: 0;
     position: absolute;
-    top: 55%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &--logo {
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    max-width: 80rem;
+    z-index: 1500;
+    pointer-events: none;
+    @include responsivo(telefone) {
+      width: 100%;
+    }
+
+  }
+  & h2 {
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -65%);
+    pointer-events: none;
+    @include responsivo(telefone) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
+// Credit to @VincentGarreau VincentGarreau
+#particles-js{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* ---- stats.js ---- */
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #00bfb2;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  display: none;
+  }
+  .js-count-particles{
+    font-size: 1.1em;
+  } #stats, .count-particles{
+    -webkit-user-select: none;
+    margin-top: 5px;
+     margin-left: 5px;
+    }
+    #stats{
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+    } .count-particles{
+      border-radius: 0 0 3px 3px;
+    }

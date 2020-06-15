@@ -25,18 +25,19 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/nav.js" defer></script>
   <script src="./js/slider.js" defer></script>
+  <script src="./js/parallax.js" defer></script>
 	<title>BankOn | Página Inicial</title>
 </head>
 <body>
 
   <header class="header">
-    <div class="header__text-box">
-      <h1 class="banner">
-        <span class="banner-main">BANK<span class="banner-main--primaria">ON</span></span>
-        <span class="banner-sub">É fácil, é simples,</br> é para você!</span>
-      </h1>
-      <a href="#" class="btn btn--green btn--animated">Criar conta bankon</a>
+    <img class="header--logo" src="/img/bankon-logo-horizontal.svg" alt="Logo BankOn">
+    <div id="parallax">
     </div>
+    <h2>as melhores soluções de pagamento estão aqui</h2>
+    <div id="particles-js"></div>
+    <script src="./js/particles.js" defer></script>
+    <script src="./js/app-particles.js" defer></script>
   </header>
 
   <nav id="menu">
@@ -47,7 +48,7 @@
         <span></span>
         <span></span>
       </li>
-      <li class="menu__logo"><img src="img/logo.svg" alt="logo"></li>
+      <li class="menu__logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
       <li class="active"><a href="#" class="active">Página Inicial</a></li>
       <li><a href="afiliados.html">Afiliados</a></li>
       <li><a href="planos.html">Planos</a></li>
@@ -107,53 +108,51 @@
     	</section>
 
       <section class="section-card">
-        <div class="section-card--wrapper">
-          <div class="row">
-            <div class="heading u-center-text u-margin-bottom-big">
-              <h2 class="heading-secondary">
-                Comida, compras, entretenimento? Sim, você no controle.
-                <span class="heading-secondary--sub"></span>
-              </h2>
-              <h1 class="heading-primary">
-                Muito mais que um cartão, é BANKON
-              </h1>
+        <div class="row">
+          <div class="heading u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+              Comida, compras, entretenimento? Sim, você no controle.
+              <span class="heading-secondary--sub"></span>
+            </h2>
+            <h1 class="heading-primary">
+              Muito mais que um cartão, é BANKON
+            </h1>
+          </div>
+          <div class="col-1-of-2">
+            <p class="paragraph">
+              O cartão Bankon não possuí anuidade e tem cashback. Solicite seu cartão é realize compras internacionais ou em qualquer estabelecimento que aceite a bandeira MasterCard.
+            </p>
+            <ul>
+              <li><span><svg width="18" height="18" viewBox="0 0 18 18">
+            <title>check_blue</title>
+            <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
+          </svg></span> Sem anuidade</li>
+              <li><span><svg width="18" height="18" viewBox="0 0 18 18">
+            <title>check_blue</title>
+            <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
+          </svg></span> Cashback</li>
+              <li><span><svg width="18" height="18" viewBox="0 0 18 18">
+            <title>check_blue</title>
+            <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
+          </svg></span> Cartão Internacional Mastercard®</li>
+              <li><span><svg width="18" height="18" viewBox="0 0 18 18">
+            <title>check_blue</title>
+            <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
+          </svg></span> Saques na Rede Banco24Horas</li>
+              <li><span><svg width="18" height="18" viewBox="0 0 18 18">
+            <title>check_blue</title>
+            <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
+          </svg></span> Contactless! Aproxime o cartão da maquininha</li>
+            </ul>
+            <br>
+            <a class="btn--text" href="cartao.html">veja mais &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img class="composition__card" src="/img/credit-card.png" alt="cartão de credito bankon">
             </div>
-            <div class="col-1-of-2">
-              <p class="paragraph">
-      	    		O cartão Bankon não possuí anuidade e tem cashback. Solicite seu cartão é realize compras internacionais ou em qualquer estabelecimento que aceite a bandeira MasterCard.
-              </p>
-              <ul>
-                <li><span><svg width="18" height="18" viewBox="0 0 18 18">
-              <title>check_blue</title>
-              <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
-            </svg></span> Sem anuidade</li>
-                <li><span><svg width="18" height="18" viewBox="0 0 18 18">
-              <title>check_blue</title>
-              <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
-            </svg></span> Cashback</li>
-                <li><span><svg width="18" height="18" viewBox="0 0 18 18">
-              <title>check_blue</title>
-              <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
-            </svg></span> Cartão Internacional Mastercard®</li>
-                <li><span><svg width="18" height="18" viewBox="0 0 18 18">
-              <title>check_blue</title>
-              <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
-            </svg></span> Saques na Rede Banco24Horas</li>
-                <li><span><svg width="18" height="18" viewBox="0 0 18 18">
-              <title>check_blue</title>
-              <path d="M6.116 14.884c.488.488 1.28.488 1.768 0l10-10c.488-.488.488-1.28 0-1.768s-1.28-.488-1.768 0l-9.08 9.15-4.152-4.15c-.488-.488-1.28-.488-1.768 0s-.488 1.28 0 1.768l5 5z" fill="#00bfb2" fill-rule="evenodd"/>
-            </svg></span> Contactless! Aproxime o cartão da maquininha</li>
-              </ul>
-              <br>
-              <a class="btn--text" href="cartao.html">veja mais &rarr;</a>
-            </div>
-            <div class="col-1-of-2">
-              <div class="composition">
-                <img class="composition__card" src="/img/credit-card.png" alt="cartão de credito bankon">
-              </div>
-            </div>
-					</div>
-      	</div>
+          </div>
+        </div>
 			</section>
 
       <section class="section-refills">
@@ -168,7 +167,7 @@
                 Use a BankOn para uma recarga
               </h1>
             </div>
-            <div class="slider u-margin-bottom-medium">
+            <div class="slider col-1-of-1 u-margin-bottom-medium">
               <div class="slides">
                 <div class="slide current">
                   <ul class="prepaid-card u-margin-bottom-medium">
@@ -202,8 +201,12 @@
                 </div>
               </div>
               <div class="controles">
-                <button class="btn-slide btn-slide__prev btn--white btn-prev"></button>
-                <button class="btn-slide btn-slide__next btn--white btn-next"></button>
+                <button class="btn-slide btn-slide__prev btn--white btn-prev">
+                  <span class="left"></span>
+                </button>
+                <button class="btn-slide btn-slide__next btn--white btn-next">
+                  <span class="right"></span>
+                </button>
               </div>
             </div>
           </div>
@@ -352,15 +355,13 @@
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eos veniam. Praesentium nemo temporibus soluta quis, fuga sit autem enim quidem officia dolorem in assumenda delectus dignissimos amet sapiente. Eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut non sunt corporis beatae architecto totam ullam fugiat tempore voluptate porro cum voluptatem illum delectus omnis, atque aliquam. Labore, quia ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi officiis quia, possimus libero sint eos! Deleniti, repellendus modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eos veniam. Autem nemo voluptas sit iusto excepturi molestiae vero possimus dolorum saepe?
             </p>
-            <div class="row badges">
-              <div class="col-1-of-4">
+            <div class="badges">
+              <div class="badges__apple-store">
                 <a href="https://apps.apple.com/br/app/bankon/id1504726741" target="_blank" rel="noopener noreferrer"><img class="badges--ios" src="img/app-store-badge.svg" alt="Google Play"></a>
               </div>
-            	<div class="col-1-of-4">
+            	<div class="badges__google-play">
                 <a href="https://play.google.com/store/apps/details?id=com.bankon.appbankon" target="_blank" rel="noopener noreferrer"><img class="badges--google-play" src="img/google-play-badge.png" alt="Google Play"></a>
             	</div>
-              <div class="col-1-of-4"></div>
-            	<div class="col-1-of-4"></div>
           	</div>
         	</div>
       	</div>
@@ -373,7 +374,7 @@
           <h3 class="heading-tertiary u-margin-bottom-small">Companhia</h3>
           <ul>
             <li><a href="quem-somos.html">Quem somos</a></li>
-            <li>Termos e condições</li>
+            <li><a href="termos-e-condicoes.html">Termos e condições</a></li>
             <li><a href="planos.html">Planos, prazos e tarifas</a></li>
           </ul>
         </div>
@@ -417,7 +418,7 @@
        		</p>
      		</div>
        </div>
-       <div class="row ">
+       <div class="row footer--ending">
           <div class="col-1-of-5 footer-logo">
             &nbsp;
             <img class="footer-logo__img" src="img/bankon-horizontal-logo.svg" alt="logo de rodapé">

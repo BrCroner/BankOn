@@ -1,7 +1,7 @@
 footer {
   color: $sub-titulo;
   margin-bottom: 0;
-  padding: 4rem 0;
+  padding: 3rem 0;
   & img {
     width: 100%;
   }
@@ -27,14 +27,26 @@ footer {
     border-top: 1px solid #d2d2d7;
     border-bottom: 1px solid #d2d2d7;
     margin-bottom: 1rem !important;
-    padding-bottom: 2rem;
-    [class^="col-"] {
-      margin-top: 2.5rem;
+    @include responsivo(telefone) {
+      margin-top: 4rem;
+      margin-bottom: 0 !important;
+      border-bottom: none;
+    }
+    & [class^="col-"] {
+      margin: 4rem 0;
+      @include responsivo(telefone) {
+        margin: 1rem auto !important;
+      }
     }
     &--social-media {
       list-style-type: none;
       margin-bottom: .6rem;
       @include clearfix;
+      @include responsivo(telefone) {
+        display: table;
+        align-items: center;
+        margin: 2rem auto;
+      }
 
       & li {
         float: left;
@@ -46,6 +58,10 @@ footer {
         height: 3rem;
         width: 3rem;
         fill: $sub-titulo;
+        @include responsivo(telefone) {
+          width: 4rem;
+          height: 4rem;
+        }
         &:hover path {
           fill: $cor-primaria;
         }
@@ -58,16 +74,26 @@ footer {
         top: -2rem;
         left: -2rem;
         height: 8rem;
+        @include responsivo(telefone) {
+          display: none;
+        }
       }
     }
     &-img__godaddy {
       @include responsivo(telefone) {
-        width: 40%;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
       }
     }
-    & [class^="col-"] {
+    &--ending [class^="col-"] {
       @include responsivo(telefone) {
-        width: 100% !important;
+        margin: 1rem auto !important;
+      }
+    }
+    &--ending :nth-child(4), &--ending .footer-logo {
+      @include responsivo(telefone) {
+        display: none;
       }
     }
   }

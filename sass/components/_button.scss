@@ -57,43 +57,62 @@
     opacity: 0;
   }
   &-slide {
-    width: 5rem;
-    height: 5rem;
-    padding: 1rem;
-    position: absolute;
-    top: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 0.5em solid #e74c3c;
     background-color: transparent;
-    margin-top: -7rem;
-    border-right: 0;
-    border-top: 0;
-    outline: none;
+    outline:none;
     transition: all ease-in .2s;
     cursor: pointer;
+    &__prev, &__next {
+      width: 6rem;
+      height: 6rem;
+      display: inline-block;
+      backface-visibility: hidden;
+      border: .5rem solid $cor-branco;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    &__prev:after, &__next:after {
+      content: '';
+      display: inline-block;
+      margin-top: .5rem;
+      width: 2rem;
+      height: 2rem;
+      border-top: .5rem solid $cor-branco;
+      border-right: .5rem solid $cor-branco;
+      background-color: transparent;
+    }
     &__prev {
-      border-left: 6px solid $cor-branco;
-      transform: rotate(45deg);
-      left: 20%;
-      &:hover {
-        transform: rotate(45deg) scale(1.1);
+      &:after {
+        margin-left: .5rem;
+        -moz-transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
       }
     }
     &__next {
-      border-left: 6px solid $cor-branco;
-      transform: rotate(-135deg);
-      right: 20%;
-      &:hover {
-        transform: rotate(-135deg) scale(1.1);
+      &:after {
+        margin-right: .5rem;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
       }
     }
-    &__prev, &__next {
-      border-bottom: 6px solid $cor-branco;
-      padding: 2rem;
+    &__prev:hover, &__next:hover {
+      transform: scale(1.05);
+    }
+    &__prev:active, &__next:active {
+      transform: scale(.95);
     }
   }
+
   &--animated {
     animation: moveInBottom 0.75s ease-in-out .75s;
     animation-fill-mode: backwards;
   }
+
   &--text {
     &:link,
     &:visited {

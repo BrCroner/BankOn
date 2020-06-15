@@ -33,37 +33,21 @@ h1, h3 {
 h2 {
     font-family: 'gilroy-light';
 }
+ol {
+  margin: 2rem 3rem;
+}
 
-//BANNER
-.banner {
-  color: $texto;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 5rem;
-  &-main {
-    color: $cor-secundaria;
-    display: block;
-    font-size: 9rem;
-    letter-spacing: .5rem;
-    animation-name: moveInLeft;
-    animation-duration: .75s;
-    &--primaria {
-        color: $cor-primaria;
+// HEADER
+.header {
+  & h2 {
+    font-size: 3rem;
+    @include responsivo(telefone) {
+      font-size: 3.6rem;
     }
-  }
-  &-sub {
-    font-size: 2rem;
-    display: block;
-    font-family: 'gilroy-light';
-    letter-spacing: 1rem;
-    line-height: 4rem;
-
-    animation-name: moveInRight;
-    animation-duration: 0.75s;
   }
 }
 
-//HEADING
+// HEADING SECTIONS
 .heading {
     letter-spacing: .10rem;
     &-primary {
@@ -79,7 +63,7 @@ h2 {
         display: inline-block;
         font-size: 2.5rem;
         @include responsivo(telefone) {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
         }
     }
     &-tertiary {
@@ -169,11 +153,20 @@ ul {
 
 footer, .footer .paragraph {
   font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  font-family: 'gilroy-light';
+  text-transform: none;
+  color: $sub-titulo;
+  @include responsivo(telefone) {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 auto;
+  }
   & .heading-tertiary {
-	font-size: 1.5rem;
-	letter-spacing: 0.05rem;
-	font-family: 'gilroy-light';
-	text-transform: none;
-    color: $sub-titulo;
+  font-size: 1.5rem;
+  color: $sub-titulo;
+    @include responsivo(telefone) {
+      font-size: 1.7rem;
+    }
   }
 }
