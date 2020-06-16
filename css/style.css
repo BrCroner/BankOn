@@ -1401,6 +1401,9 @@ input:checked ~ label .credit-card__button {
   .section-plans .table-cell a {
     display: none !important; } }
 
+.support:first-child {
+  margin-bottom: 0 !important; }
+
 .search, .search-result {
   width: 100%;
   border: solid 1px #d2d2d7;
