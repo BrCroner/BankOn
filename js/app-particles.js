@@ -20,7 +20,7 @@ particlesJS('particles-js',
         "color": "#00bfb2"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
@@ -39,7 +39,7 @@ particlesJS('particles-js',
       }
     },
     "size": {
-      "value": 5,
+      "value": 6,
       "random": true,
       "anim": {
         "enable": false,
@@ -77,7 +77,7 @@ particlesJS('particles-js',
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true

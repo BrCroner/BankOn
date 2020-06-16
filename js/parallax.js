@@ -17,7 +17,7 @@ const shadow = e => {
     x = x + e.target.offsetLeft;
     y = y + e.target.offsetTop;
   }
-  const stretchShadow = -15;
+  const stretchShadow = 10;
   const stretchShadowX = Math.round((x / width * stretchShadow) - (stretchShadow / 2));
   const stretchShadowY = Math.round((y / width * stretchShadow) - (stretchShadow / 2));
 

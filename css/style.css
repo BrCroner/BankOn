@@ -1401,8 +1401,11 @@ input:checked ~ label .credit-card__button {
   .section-plans .table-cell a {
     display: none !important; } }
 
-.support:first-child {
-  margin-bottom: 0 !important; }
+.suport-row {
+  margin-bottom: 1rem !important; }
+  @media (max-width: 37.5em) {
+    .suport-row {
+      margin-bottom: 0 !important; } }
 
 .search, .search-result {
   width: 100%;
@@ -1449,6 +1452,8 @@ input:checked ~ label .credit-card__button {
         display: inline-block;
         margin-top: 2rem;
         width: 100%; } }
+  .search:first-child, .search-result:first-child {
+    margin-bottom: 0 !important; }
 
 .search-result {
   opacity: 0;
