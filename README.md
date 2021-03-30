@@ -6,7 +6,7 @@
 
 :warning: Projeto foi cancelado pelo cliente :warning:
 
-# Página inicial BankOn
+# Landing page BankOn
 
 Projeto visa criar uma nova página inicial para fintech BankOn.
 
