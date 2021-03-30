@@ -4,7 +4,7 @@
 <br>
 <br>
 
-<p align="center">:warning: Projeto foi cancelado pelo cliente :warning:</p>
+:warning: Projeto foi cancelado pelo cliente :warning:
 
 # Página inicial BankOn
 
