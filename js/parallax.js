@@ -6,7 +6,6 @@
 //   parallax.style.setProperty('--x', x + "px");
 //   parallax.style.setProperty('--y', y + "px");
 // });
-
 const textHeader = document.querySelector('.header').querySelector('h2');
 const particles = document.getElementById('particles-js')
 const shadow = e => {

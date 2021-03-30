@@ -9,9 +9,7 @@
   "author": "Bruno Croner",
   "license": "ISC",
   "dependencies": {
+    "node-sass": "^5.0.0",
     "particles.js": "^2.0.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.14.1"
   }
 }

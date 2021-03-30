@@ -66,13 +66,27 @@
     transition: all ease-in .2s;
     cursor: pointer;
     &__prev, &__next {
+      z-index: 200;
+      position: absolute;
+      bottom: 38%;
       width: 6rem;
       height: 6rem;
       display: inline-block;
       backface-visibility: hidden;
       border: .5rem solid $cor-branco;
       border-radius: 50%;
-      margin: 0 auto;
+      @include responsivo(desk-grande) {
+        top: 55%;
+      }
+      @include responsivo(tab-paisagem) {
+        bottom: 42%;
+      }
+      @include responsivo(tab-retrato) {
+        top: 32%;
+      }
+      @include responsivo(telefone) {
+        top: 40%;
+      }
     }
     &__prev:after, &__next:after {
       content: '';
@@ -85,6 +99,10 @@
       background-color: transparent;
     }
     &__prev {
+      left: 19%;
+      @include responsivo(telefone) {
+        left: 2%;
+      }
       &:after {
         margin-left: .5rem;
         -moz-transform: rotate(-135deg);
@@ -93,6 +111,11 @@
       }
     }
     &__next {
+      position: absolute;
+      right: 19%;
+      @include responsivo(telefone) {
+        right: 2%;
+      }
       &:after {
         margin-right: .5rem;
         -moz-transform: rotate(45deg);

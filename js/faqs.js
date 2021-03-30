@@ -76,4 +76,13 @@ function handleSearch(input) {
 search.addEventListener('submit', handleSearch);
 
 
+const list = document.querySelector('ul');
+
+list.addEventListener('click', event => {
+  event.target.closest('li').classList.toggle('highlight');
+});
+
+
+const randomIntBetween = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+console.log(randomIntBetween(1, 10));
 
