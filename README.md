@@ -1,7 +1,7 @@
 <p align="center"><img display="block" src="https://i.ibb.co/TmgfPh4/v09-banco-Online-horizontal-shadow.png"></p>
 
 
-# Página Inicial BankOn
+# Página inicial BankOn
 
 Projeto visa criar uma nova página inicial para fintech BankOn.
 
