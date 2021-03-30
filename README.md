@@ -1,11 +1,17 @@
 <p align="center"><img display="block" src="https://i.ibb.co/TmgfPh4/v09-banco-Online-horizontal-shadow.png"></p>
 
 
+<br>
+<br>
+
+<p align="center">:warning: Projeto foi cancelado pelo cliente :warning:</p>
+
 # Página inicial BankOn
 
 Projeto visa criar uma nova página inicial para fintech BankOn.
 
-> [website BankOn](http://www.bankon.com.br)
+Página atual da Bankon [ <a href="www.bankon.com.br" target="_blank">bankon.com.br</a> ]
+
 
 ## Principais características:
 * Animações
